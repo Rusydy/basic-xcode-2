@@ -15,8 +15,18 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(15)
             
-            Text("Niagara Falls")
-                .font(.title)
+            HStack {
+                Text("Niagara Falls")
+                    .font(.title)
+                    .fontWeight(.bold)
+                
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.fill")
+                Image(systemName: "star.leadinghalf.filled")
+                
+            }
             
             Text("Come visit the falls for an exeprience of a lifetime!")
         }
