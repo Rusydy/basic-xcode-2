@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .leading, spacing: 20.0){
+            Image("niagarafalls")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .cornerRadius(15)
+            
+            Text("Niagara Falls")
+                .font(.title)
+            
+            Text("Come visit the falls for an exeprience of a lifetime!")
         }
-        .padding()
     }
 }
 
@@ -24,3 +28,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+ 
